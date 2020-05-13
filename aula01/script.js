@@ -16,10 +16,10 @@ var drawCircle = {
         context.fill()
     },
     move: function(){
-        if((this.x  + 100)  >= WIDTH){
+        if((this.x  + this.r)  >= WIDTH){
             this.dir = 1
         }
-        if((this.x  - 100) <= 0){
+        if((this.x  - this.r) <= 0){
             this.dir = 0
         }
         if(this.dir === 0){
